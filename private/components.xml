@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Aug 21, 2021 at 04:10 AM
+- Server version: 10.4.20-MariaDB
+- PHP Version: 8.0.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="test" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="components">
+                CREATE TABLE `components` (
+                  `name` text NOT NULL,
+                  `price` float NOT NULL,
+                  `quantity` int(11) NOT NULL,
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `store` text NOT NULL,
+                  `store_ref` text NOT NULL,
+                  `manufacturer` text NOT NULL,
+                  `type` text NOT NULL,
+                  `description` text NOT NULL,
+                  `location` text NOT NULL,
+                  `label` text NOT NULL,
+                  `label_extra` text NOT NULL,
+                  `package` text NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+</pma_xml_export>
