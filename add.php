@@ -48,7 +48,7 @@ if ( !isset($_SESSION['isAdmin']) || !$_SESSION['isAdmin'] )
                 <tr>
                   <td> <input class="text-search" type="text" name="edit_type" value="" /> </td>
                   <td> <input class="text-search" type="text" name="edit_name" value="" /> </td>
-                  <td> <input class="text-search" type="text" name="edit_desc" value="" /> </td>
+                  <td> <textarea class="text-edit" wrap="soft" maxlength="100" placeholder="empty" name="edit_desc"></textarea> </td>
                   <td> <input class="text-search" type="text" name="edit_pkg" value="" /> </td>
                   <td> <input class="text-search" type="number" min="0" step="1" name="edit_quantity" value="" /> </td>
                   <td> <input class="text-search" type="text" name="edit_store" value="" /> </td>

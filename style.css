@@ -20,5 +20,14 @@ tfoot {
 }
 
 .text-search {
-    width: 80px;
+    width: 90%;
+}
+
+.text-edit {
+  display: block;
+  width: 90%;
+  overflow: show;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
 }

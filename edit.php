@@ -96,14 +96,13 @@ catch(Exception $e)
                 <tr>
                   <td> <input class="text-search" type="text" name="edit_type" value="<?php echo $data['type']; ?>" /> </td>
                   <td> <input class="text-search" type="text" name="edit_name" value="<?php echo $data['name']; ?>" /> </td>
-                  <td> <input class="text-search" type="text" name="edit_desc" value="<?php echo $data['description']; ?>" /> </td>
+                  <td> <textarea class="text-edit" wrap="soft" maxlength="100" placeholder="empty" name="edit_desc"><?php echo $data['description']; ?></textarea> </td>
                   <td> <input class="text-search" type="text" name="edit_pkg" value="<?php echo $data['package']; ?>" /> </td>
                   <td> <input class="text-search" type="number" min="0" step="1" name="edit_quantity" value="<?php echo (int)$data['quantity']; ?>" /> </td>
                   <td> <input class="text-search" type="text" name="edit_store" value="<?php echo $data['store']; ?>" /> </td>
                   <td> <input class="text-search" type="text" name="edit_ref" value="<?php echo $data['store_ref']; ?>" /> </td>
                   <td> <input class="text-search" type="text" name="edit_manu" value="<?php echo $data['manufacturer']; ?>" /> </td>
                   <td> <input class="text-search" type="number" min="0" step="0.01" name="edit_price" value="<?php echo (float)$data['price']; ?>" /> </td>
-
                   <td> <input class="text-search" type="text" name="edit_loc" value="<?php echo $data['location']; ?>" /> </td>
                   <td> <input class="text-search" type="text" name="edit_label" value="<?php echo $data['label']; ?>" /> </td>
                   <td> <input class="text-search" type="text" name="edit_label2" value="<?php echo $data['label_extra']; ?>" /> </td>

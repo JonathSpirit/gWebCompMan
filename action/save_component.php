@@ -32,7 +32,7 @@ if ( !isset($_POST['edit_type']) )
 }
 else
 {
-  $edit_type = (string)$_POST['edit_type'];
+  $edit_type = trim((string)$_POST['edit_type']);
 }
 if ( !isset($_POST['edit_name']) )
 {
@@ -40,7 +40,11 @@ if ( !isset($_POST['edit_name']) )
 }
 else
 {
-  $edit_name = (string)$_POST['edit_name'];
+  $edit_name = trim((string)$_POST['edit_name']);
+  if ( empty($edit_name) )
+  {
+      die("edit_name should not be empty !");
+  }
 }
 if ( !isset($_POST['edit_desc']) )
 {
@@ -48,7 +52,7 @@ if ( !isset($_POST['edit_desc']) )
 }
 else
 {
-  $edit_desc = (string)$_POST['edit_desc'];
+  $edit_desc = trim((string)$_POST['edit_desc']);
 }
 if ( !isset($_POST['edit_pkg']) )
 {
@@ -56,7 +60,7 @@ if ( !isset($_POST['edit_pkg']) )
 }
 else
 {
-  $edit_pkg = (string)$_POST['edit_pkg'];
+  $edit_pkg = trim((string)$_POST['edit_pkg']);
 }
 if ( !isset($_POST['edit_quantity']) )
 {
@@ -72,7 +76,7 @@ if ( !isset($_POST['edit_store']) )
 }
 else
 {
-  $edit_store = (string)$_POST['edit_store'];
+  $edit_store = trim((string)$_POST['edit_store']);
 }
 if ( !isset($_POST['edit_ref']) )
 {
@@ -80,7 +84,7 @@ if ( !isset($_POST['edit_ref']) )
 }
 else
 {
-  $edit_ref = (string)$_POST['edit_ref'];
+  $edit_ref = trim((string)$_POST['edit_ref']);
 }
 if ( !isset($_POST['edit_manu']) )
 {
@@ -88,7 +92,7 @@ if ( !isset($_POST['edit_manu']) )
 }
 else
 {
-  $edit_manu = (string)$_POST['edit_manu'];
+  $edit_manu = trim((string)$_POST['edit_manu']);
 }
 if ( !isset($_POST['edit_price']) )
 {
@@ -104,7 +108,7 @@ if ( !isset($_POST['edit_loc']) )
 }
 else
 {
-  $edit_loc = (string)$_POST['edit_loc'];
+  $edit_loc = trim((string)$_POST['edit_loc']);
 }
 if ( !isset($_POST['edit_label']) )
 {
@@ -112,7 +116,7 @@ if ( !isset($_POST['edit_label']) )
 }
 else
 {
-  $edit_label = (string)$_POST['edit_label'];
+  $edit_label = trim((string)$_POST['edit_label']);
 }
 if ( !isset($_POST['edit_label2']) )
 {
@@ -120,7 +124,7 @@ if ( !isset($_POST['edit_label2']) )
 }
 else
 {
-  $edit_label2 = (string)$_POST['edit_label2'];
+  $edit_label2 = trim((string)$_POST['edit_label2']);
 }
 
 $request = $bdd->prepare("UPDATE components
